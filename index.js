@@ -22,3 +22,8 @@ var newList = kittens.slice(0);
  newList.splice(newList.length, 0 , name);
 return newList;
 }
+function prependKitten(name){
+  var newList = kittens.slice(0);
+  newList.splice(0, 0, name);
+  return newList
+}
