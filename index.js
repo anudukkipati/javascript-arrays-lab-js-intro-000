@@ -27,3 +27,8 @@ function prependKitten(name){
   newList.splice(0, 0, name);
   return newList
 }
+function removeLastKitten() {
+  var newList = kittens.slice(0);
+  newList.slice(0, newList.length-1);
+  return newList;
+}
